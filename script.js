@@ -23,7 +23,7 @@ for (const producto of productos){
 
 
 
-console.log(productos[parseInt(prompt("Ingrese 0 si desea TV, 1 para PC, 2 CELULAR y 3 TABLET"))]);
+const auxvalor=productos[parseInt(prompt("Ingrese 0 si desea TV, 1 para PC, 2 CELULAR y 3 TABLET"))];
 
 
 
@@ -64,4 +64,4 @@ return total;
 
 
 console.log("Debe abonar "+cuotas+" cuotas de ");
-console.log(calculadoraDeCuotas(cuotas, productos.valor,precioFinal)+" pesos");
+console.log(calculadoraDeCuotas(cuotas, auxvalor.valor,precioFinal)+" pesos");
