@@ -27,37 +27,37 @@ const auxvalor=productos[parseInt(prompt("Ingrese 0 si desea TV, 1 para PC, 2 CE
 
 
 
-let cuotas = parseInt(prompt("Ingrese cantidad de cuotas: "));
+let cuotas = parseInt(prompt("Ingrese cantidad de cuotas (6, 12, 18, 24): "));
 let precioFinal;
-
 
 
 function calculadoraDeCuotas(cantidadDeCuotas,monto,total){
 
-        switch(cantidadDeCuotas){         
-            case 3: 
-            total=Math.round(monto/cantidadDeCuotas);
-            break;
+    switch(cantidadDeCuotas){         
+        case 3: 
+        total=Math.round(monto/cantidadDeCuotas);
+        break;
 
-            case 6: 
-            total=Math.round(monto/cantidadDeCuotas);
-            break;
+        case 6: 
+        total=Math.round(monto/cantidadDeCuotas);
+        break;
 
-            case 12: 
-            total=Math.round(monto/cantidadDeCuotas);
-            break;
+        case 12: 
+        total=Math.round(monto/cantidadDeCuotas);
+        break;
 
-            case 18: 
-            total=Math.round(monto/cantidadDeCuotas);
-            break;
+        case 18: 
+        total=Math.round(monto/cantidadDeCuotas);
+        break;
 
-            case 24: 
-            total=Math.round(monto/cantidadDeCuotas);
-            break;
+        case 24: 
+        total=Math.round(monto/cantidadDeCuotas);
+        break;
 
-            default:
-            return 0;
-    }
+        default:
+        alert("Cantidad de cuotas incorrecta. Intentelo de nuevo.");
+        return "ERROR";
+}
 
 return total;
 }
